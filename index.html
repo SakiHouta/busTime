@@ -2,11 +2,49 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>busTime</title>
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/materialize.css" rel="stylesheet">
+	<link href="css/js.css" rel="stylesheet">
+
 </head>
+
 <body>
-	<a>hoge</a>
-	<script type="text/javascript" src="js/main.js"></script>
+	<div class ="time">
+	<script>
+	var jikan = newDate()
+	var hour = jikan.getHours();
+  var minute = jikan.getMinutes();
+
+	document.write(hour+":"+minute);
+	</script>
+</div>
+<div class="next-time">
+
+	<h2>出発するまであと分</h2>
+
+	<h1>次発</h1>
+</div>
+
+<div class="routes">
+	<h2>北３系統</h2>
+</div>
+
+<div class="schedule">
+	<p>
+		<select name = "曜日選択">
+			<option >月曜日</option>
+		  <option>火曜日</option>
+		  <option>水曜日</option>
+		  <option>木曜日</option>
+		  <option>金曜日</option>
+		  <option>土曜日</option>
+	  </select>
+	</p>
+
+	<p>▶︎</p>
+
+</div>
+
 </body>
 </html>
